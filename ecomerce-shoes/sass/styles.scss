@@ -1,0 +1,39 @@
+@use 'initial';
+@use 'variables';
+@use 'header';
+@use 'navbar';
+@use 'modal-navbar';
+@use 'gallery';
+@use 'details';
+@use 'input';
+@use 'modal-cart';
+@use 'gallery-modal';
+
+.main-container{
+    width: 375px;
+    // border: 1px solid black;
+    margin: auto;
+    position: relative;
+    @media (min-width: 1115px){
+        width: 1115px;
+    }
+}
+.content{
+    @media (min-width: 1115px){
+        display: flex;
+        padding: 90px 50px;
+        gap: 124px;
+    }
+}
+
+.show{
+    display: block;
+}
+.cart-empty{
+    font-weight: 700;
+    color: variables.$Black-modal;
+    text-align: center;
+    margin-top: 30px;
+}
+
+
