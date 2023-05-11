@@ -160,7 +160,7 @@ section {
 }
 
 .home-img img {
-    width: 22vw;
+    width: 21vw;
     animation: floatImage 4s ease-in-out infinite;
     box-shadow: 0 .5rem 1rem var(--main-color);
 }
@@ -309,11 +309,41 @@ h1:hover {
     text-shadow: red -3px, cyan 3px;
 }
 
+
+
 /* about section */
+
+.about {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    flex-direction: row-reverse;
+}
+
+.about-img img {
+    width: 23vw;
+    animation: floatImage 4s ease-in-out infinite;
+    box-shadow: 0 .5rem 1rem var(--main-color);
+}
 
 .heading {
     text-align: center;
     font-size: 4.5rem;
+}
+
+.about-content h2 {
+    text-align: left;
+    line-height: 1.2;
+}
+
+.about-content h3 {
+    font-size: 2.6rem;
+}
+
+.about-content p {
+    font-size: 1.7rem;
+    margin: 2rem 0 3rem;
 }
 
 /* services section */
@@ -461,10 +491,32 @@ h1:hover {
 
 .education-box img {
     width: 100%;
+
     transition: .5s ease;
     object-fit: cover;
 }
 
+
+
+
+.btn-Vermas {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin:8rem 40rem 0px 40rem ;
+    padding: .8rem;
+    color: var(--second-bg-color);
+    background: var(--main-color);
+    border-radius: .8rem;
+    transition: .5s ease;
+}
+
+.btn-Vermas:hover {
+    box-shadow: none;
+    transform: scale(1.1);
+    box-shadow: 0 0 1rem var(--main-color);
+}
 /* contact section */
 
 .contact h2 {
@@ -578,6 +630,10 @@ h1:hover {
     .footer {
         padding: 2rem 3%;
     }
+    .btn-Vermas {
+        margin:8rem 15rem 0px 15rem ;
+    }
+
 }
 
 @media (max-width: 768px) {
@@ -643,7 +699,8 @@ h1:hover {
     }
 
     .portfolio-container {
-        grid-template-columns: repeat(1, 1fr);
+        grid-template-columns: repeat(2, 1fr);
+
     }
 
     .education h2 {
@@ -653,11 +710,14 @@ h1:hover {
     .education-container {
         grid-template-columns: repeat(1, 1fr);
     }
+    .btn-Vermas {
+        margin:8rem 15rem 0px 15rem ;
+    }
 }
 
 @media (max-width: 617px) {
     .education-container {
-        grid-template-columns: 1fr;
+        grid-template-columns: repeat(1, 1fr);
     }
 }
 
